@@ -1,0 +1,36 @@
+{
+    "name": "dp-0/user-activity",
+    "type": "library",
+    "description": "A package for tracking user activity in a Laravel application.",
+    "keywords": [
+        "laravel",
+        "user activity",
+        "tracking",
+        "logging"
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Dp0\\UserActivity\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dinesh Phuyel",
+            "email": "dineshphuyel20@gmail.com"
+        }
+    ],
+    "require": {
+        "jfcherng/php-diff": "^6.15",
+        "livewire/livewire": "^2.12"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dp0\\UserActivity\\UserActivityServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "version":"1.0"
+}
