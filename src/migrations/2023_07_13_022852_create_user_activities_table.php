@@ -18,7 +18,7 @@ return new class extends Migration
             $table->unsignedBigInteger('user_id');
             $table->text('old_data')->nullable();
             $table->text('new_data')->nullable();
-            $table->ipAddress();
+            $table->ipAddress('ip_address');
             $table->text('user_agent');
             $table->timestamp('created_at');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
